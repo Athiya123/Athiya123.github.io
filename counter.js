@@ -14,6 +14,7 @@ function updateCounter() {
     // else{
     //    count=count+1;
     // }
+    
     count = 0;
     if(count == null){
         return 1;
