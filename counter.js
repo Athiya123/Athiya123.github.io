@@ -14,12 +14,12 @@ function updateCounter() {
     // else{
     //    count=count+1;
     // }
-    
-    count = 0;
     if(count == null){
-        return 1;
+        count = 1;
     }
-    count++;
+    else{
+        count++;
+    }
     
     localStorage.setItem('visiterCount', count);
 
