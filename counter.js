@@ -14,6 +14,7 @@ function updateCounter() {
     // else{
     //    count=count+1;
     // }
+    parseInt(count);
     if(count == null){
         count = 1;
     }
