@@ -13,7 +13,7 @@
     <div class="feed">
       <h2>Get In Touch</h2>
       <div class="feed_form">
-        <form name="submit-googlesheet" method="post">
+        <form name="submit-googlesheet" method="post" id="feedback-form">
           <input type="text" name="Name" placeholder="Name" /><br />
           <input type="email" name="Email" placeholder="Email ID" /><br />
           <input
@@ -24,8 +24,8 @@
           <textarea
             rows="5"
             cols="7"
-            name="Review"
-            placeholder="Write your review"
+            name="Message"
+            placeholder="Write a Message"
           ></textarea
           ><br />
           <button type="submit">Submit</button>
@@ -48,21 +48,24 @@
       </div>
     </footer>
 
-    <script type="text/javaScript">
+    <script type="text/javascript">
       const scriptURL =
-      'https://script.google.com/macros/s/AKfycbx_O5zT1_Il7Sm-JoD8bAsrjRyJTs0GVjNUX5Rw7En-NOaAuk75N-yLlPwH9pbRNo0w/exec'
-      const form = document.forms['submit-googlesheet']
+        // 'https://script.google.com/macros/s/AKfycbx_O5zT1_Il7Sm-JoD8bAsrjRyJTs0GVjNUX5Rw7En-NOaAuk75N-yLlPwH9pbRNo0w/exec';
+        'https://script.google.com/macros/s/AKfycbwrz0WQCj7jOgaLJ-bVJZed5soucep9jCcd9OPlJWmS1NxRfGWyfXpJrZxa2Yuu8AFTgA/exec';
+      const form = document.getElementById('feedback-form');
 
-      form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL,{
-              method: 'POST',
-              body: new FormData(form)
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form),
+        })
+          .then((response) => {
+            alert('Thanks for your valuable feedback!!!');
+            form.reset(); 
           })
-          .then(response => alert(
-              "Thanks for you valuable feedback!!!"))
-          .catch(error => console.error('Error!', error.message));
-      })
+          .catch((error) => console.error('Error!', error.message));
+      });
     </script>
   </body>
 </html>
