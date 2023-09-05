@@ -491,3 +491,95 @@ footer {
     margin: 12px 0;
   }
 }
+
+/* -------------------- */
+
+/* Style the feedback section */
+.feed {
+  background-color: rgba(236, 160, 160, 0.7); /* Add a semi-transparent black overlay for readability */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style the form container */
+.feed_form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form inputs and button */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #fac3c3;
+}
+
+/* Style form labels */
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+  background-color: #dacece;
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer .contact {
+  text-align: center;
+}
+
+footer .contact h3 {
+  font-size: 20px;
+  font-family: 'cosmic', sans-serif;
+  padding: 5px;
+}
+
+footer .contact a {
+  font-size: 30px;
+  color: orange;
+  margin: 10px;
+  text-decoration: none;
+}
+
+footer .contact a:hover {
+  color: #fff; /* Change the color on hover */
+}

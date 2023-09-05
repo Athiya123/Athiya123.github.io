@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio| Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="feed">
+      <h2>Get In Touch</h2>
+      <div class="feed_form">
+        <form name="submit-googlesheet" method="post">
+          <input type="text" name="Name" placeholder="Name" /><br />
+          <input type="email" name="Email" placeholder="Email ID" /><br />
+          <input
+            type="number"
+            name="Number"
+            placeholder="Contact Number"
+          /><br />
+          <textarea
+            rows="5"
+            cols="7"
+            name="Review"
+            placeholder="Write your review"
+          ></textarea
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="contact">
+        <h3>Contact us</h3>
+        <a href="https://wa.me/+918340084704" target="_blank"
+          ><i class="fa fa-whatsapp" aria-hidden="true"></i
+        ></a>
+        <a href="tel: +918340084704"
+          ><i class="fa fa-mobile" aria-hidden="true"></i
+        ></a>
+        <a href="mailto: athiyafm@gmail.com"
+          ><i class="fa fa-envelope-o" aria-hidden="true"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script type="text/javaScript">
+      const scriptURL =
+      'https://script.google.com/macros/s/AKfycbx_O5zT1_Il7Sm-JoD8bAsrjRyJTs0GVjNUX5Rw7En-NOaAuk75N-yLlPwH9pbRNo0w/exec'
+      const form = document.forms['submit-googlesheet']
+
+      form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL,{
+              method: 'POST',
+              body: new FormData(form)
+          })
+          .then(response => alert(
+              "Thanks for you valuable feedback!!!"))
+          .catch(error => console.error('Error!', error.message));
+      })
+    </script>
+  </body>
+</html>
