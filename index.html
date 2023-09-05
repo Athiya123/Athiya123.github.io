@@ -1,330 +1,270 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="Priyanshu Tiwari/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Development With Athiya Fathima</title>
-
-	<!-- FONT AWESOME -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- MAIN CSS -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- MAIN JS -->
-	<script src="js/main.js" type="text/javascript"></script>
-
-	<!-- MAIN JQUERY -->
-	<script src="js/jquery.js" type="text/javascript"></script>
-
-	
-
-	
-
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	
-	<!-- NAVBAR -->
-	<section class="container-fluid mainHeader fadeIn" id="navbar">
-		<div class="navbar navbar-inverse">
-		  <div class="container">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Development with Athiya Fathima</a>
-		    </div>
-		    <div class="collapse navbar-collapse">
-		      <ul class="nav navbar-nav">
-		        <li class="active" data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#">Home</a></li>
-		        <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
-		        <li><a href="#skills" data-toggle="collapse" data-target=".navbar-collapse.in">Skills</a></li>
-		        <li><a href="#experience" data-toggle="collapse" data-target=".navbar-collapse.in">Experience</a></li>
-		        <li><a href="#projects" data-toggle="collapse" data-target=".navbar-collapse.in">Projects</a></li>
-		        <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact Me</a></li>
-		      </ul>
-		    </div><!--/.nav-collapse -->
-		  </div>
-		</div>
-	</section>
-
-	<!-- HOME -->
-	<section class="home fadeIn">
-		<div class="header-section">
-				<div class="container checkOutMyPortfolio">
-					<img src="profile.png">
-						<h2>Hello World...<span>!</span></h2>
-							<p>My name is Athiya Fathima & I am a Full Stack Web Developer</p>
-							
-				</div>
+  <section id="about-me">
+    <nav>
+      <div class="personal__logo">Athiya Fathima</div>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a href="#languages" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Languages</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link">
+          <a href="mailto:email@email.com" class="
+            nav__link--anchor
+            nav__link--anchor-primary
+          ">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="flex flex-1">
+      <div class="about-me__info row">
+        <div class="about-me__info--container">
+          <figure class="about-me__picture--mask">
+            <img src="./assets/me.jpeg" class="about-me__picture" alt="Picture of Me!">
+          </figure>
+          <h1 class="about-me__info--title">
+            Hey! I'm <span class="text--purple">Athiya Fathima</span>&nbsp;<span class="wave">👋</span>
+          </h1>
+          <p class="about-me__info--para">
+            I'm a <strong class="text--purple">Full Stack Developer</strong> with a strong passion for building
+            responsive and performant web
+            applications with great user experiences that positively impacts the world.
+          </p>
+          <div class="about-me__links">
+            <a href="https://www.linkedin.com/in/athiya-fathima-63642b215/" class="about-me__link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Athiya123" class="about-me__link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.google.com/gmail/about/" class="about-me__link">
+              <i class="far fa-envelope"></i>
+            </a>
+            <a href="./assets/Athiya Fathima-resume.pdf (1).pdf" target="_blank" class="about-me__link">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+        <figure class="about-me__img--container">
+          <img src="./assets/undraw_websites.svg" class="about-me__img" alt="">
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section id="languages">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">This is my <span class="text--purple">technology stack</span></h1>
+        <div class="language__list">
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt="Html Logo" class="language__img" />
+            </figure>
+            <span class="language__name">HTML</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">CSS</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">JavaScript</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">ReactJs</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://icon-library.com/images/node-js-icon/node-js-icon-11.jpg" alt="Nodejs Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">Nodejs</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://newrelic.com/sites/default/files/styles/800w/public/2021-10/mongo_logo.jpg?itok=Z1PabBZB" alt="MongoDB Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">Here are some of my <span class="text--purple">projects</span></h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/loopit.png" class="project__img" alt="Car subscription project">
+              <div class="project__description">
+                <h3 class="project__description--title">E-commerce</h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS
+                </h4>
+                <p class="project__description--para">
+                  E-commerce, short for electronic commerce, refers to the buying and selling
+                  of goods and services over the internet. It has become a significant aspect
+                   of modern business, providing a platform for companies and consumers to engage 
+                   in online transactions
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Athiya123" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://athiya123.github.io/Mini-Project/" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/loopit.png" class="project__img" alt="Car subscription project">
+              <div class="project__description">
+                <h3 class="project__description--title">Netflix-clone</h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  The clone would have a library of movies and TV shows with images, titles, descriptions, and possibly ratings
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Athiya123" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://athiya123.github.io/netflix-clone/" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/loopit.png" class="project__img" alt="Car subscription project">
+              <div class="project__description">
+                <h3 class="project__description--title">url-shortener</h3>
+                <h4 class="project__description--sub-title">
+                  Frontend & Backend using Reactjs, MongoDB & Nodejs
+                </h4>
+                <p class="project__description--para">
+                  A URL shortener is a web service that takes long URLs and converts them into shorter,
+                   more manageable links. These shortened URLs are easier to share, 
+                   especially on platforms with character limits, such as Twitter or messaging apps.
+                    When someone clicks on the shortened link, they are redirected to the original, longer URL
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Athiya123" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://url-shortener-kjus.vercel.app/" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="row footer__row">
+      <a href="#" class="footer__anchor">
+        <figure class="footer__logo">
+          <img src=" " class="footer__logo--img" alt="">
+        </figure>
+        <span class="footer__logo--popper">
+          Top
+          <i class="fas fa-arrow-up"></i>
+        </span>
+      </a>
+      <div class="footer__social--list">
+        <a href="https://github.com/Athiya123" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        " target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/athiya-fathima-63642b215/" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        " target="_blank">LinkedIn</a>
+        <a href="./assets/Athiya Fathima-resume.pdf (1).pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        " target="_blank">Resume</a>
+      </div>
+      <div class="footer-top">
+        <div class="footer__copyright">Copyright © 2023 Athiya Fathima</div>
+        <div id="counter"></div>
+        <style>
+          body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+      
+          #counter {
+            width: 150px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: 0.5s;
+            position: fixed;
+            bottom: 20px; 
+            right: 20px; 
+          }
+        </style>
 			</div>
-	</section>
-
-	<!-- ABOUT US -->
-
-	<section class="container-fluid about fadeIn" id="about">
-		<h3>About</h3>
-		<div class="container">
-		  <div class="row">
-		   <div class="col-sm-3 col-md-6">
-		      <img class="yourPic img-responsive" src="profile.png" alt="Priyanshu Tiwari">
-		   </div>
-		   <div class="col-sm-9 col-md-6">
-		      <p>
-		      	<div class="panel-group" id="accordion">
-				  <div class="panel panel-default">
-				    <div class="panel-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-				        Who am I!!</a>
-				      </h4>
-				    </div>
-				    <div id="collapse1" class="panel-collapse collapse in">
-				      <div class="panel-body">Currently, Iam intern in #Insert. pursuing B-tech final year in the stream of information technology at BVRIT HYDERABAD.</div>
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-				        Certifications</a>
-				      </h4>
-				    </div>
-				    <div id="collapse2" class="panel-collapse collapse">
-				      <div class="panel-body">National student colloquim, HTML Beginner skill test </div>
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-				        Interests</a>
-				      </h4>
-				    </div>
-				    <div id="collapse3" class="panel-collapse collapse">
-				      <div class="panel-body">Listening music!!</div>
-				    </div>
-				  </div>
-				</div>
-		      </p>
-		   </div>
-		 </div>
-		</div>
-	</section>
-
-	
-	<!-- SKILLS -->
-	<section class="container-fluid skills fadeIn" id="skills">
-		<div class="study-section">
-				<div class="container">
-					<div class="study-grids">
-						<div class="col-md-6 study-grid">
-						<h3>Achievement.<span>!</span></h3>
-						<div class="study1">
-							<p>Internet of Things<label>( 2022 )</label></p>
-							<p>Matlab onramp <label>( 2021 )</label></p>
-							<p>Microsoft edge <label>( 2020 )</label></p>
-			
-						</div>
-						</div>
-						<div class="col-md-6 study-grid">
-						<h3>skills..<span>!</span>&nbsp&nbsp<i class="fa fa-anchor" style="color:#4267b2;;"></i></h3>
-						<div class="study2">
-						<h4>ReactJs&nbsp&nbsp<i class="fa fa-facebook" style="color:#4267b2;;"></i></h4>
-							<div class="progress">
-							  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-								<span class="sr-only">40% Complete (success)</span>
-							  </div>
-							</div>
-						<h4>AngularJs</h4>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-							<span class="sr-only">30% Complete</span>
-						  </div>
-						</div>
-						<h4>Node Js</h4>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-							<span class="sr-only">40% Complete (warning)</span>
-						  </div>
-						</div>
-						<h4>MongoDB<h4>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-							<span class="sr-only">30% Complete (danger)</span>
-						  </div>
-						</div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-	</section>
-	<section class="container-fluid experience fadeIn" id="experience">
-		<h3>Experience</h3>
-		<div class="container ">
-				<div class="row ">
-				  <div class="col-sm-4 ">
-					<div class="figure ">
-						<img class="img-responsive " src="https://robohash.org/a " alt="Thumb " width="400 " height="300 " />
-						<div class="figcaption "><div>Project 1</div></div>
-					</div>
-				  </div>
-				  <div class="col-sm-4 ">
-					 <div class="figure ">
-						<img class="img-responsive " src="https://robohash.org/b " alt="Thumb " width="400 " height="300 " />
-						<div class="figcaption "><div>Project 2</div></div>
-					 </div>
-				  </div>
-				  <div class="col-sm-4 ">
-						<div class="figure ">
-							<img class="img-responsive " src="https://robohash.org/c " alt="Thumb " width="400 " height="300 " />
-							<div class="figcaption "><div>Project 3</div></div>
-						</div>
-				  </div>
-				</div>
-				<div class="row ">
-				  <div class="col-sm-4 ">
-					<div class="figure ">
-						<img class="img-responsive " src="https://robohash.org/d " alt="Thumb " width="400 " height="300 " />
-						<div class="figcaption "><div>Project 1</div></div>
-					</div>
-				  </div>
-				  <div class="col-sm-4 ">
-					 <div class="figure ">
-						<img class="img-responsive " src="https://robohash.org/e " alt="Thumb " width="400 " height="300 " />
-						<div class="figcaption "><div>Project 2</div></div>
-					 </div>
-				  </div>
-				  <div class="col-sm-4 ">
-						<div class="figure ">
-							<img class="img-responsive " src="https://robohash.org/f " alt="Thumb " width="400 " height="300 " />
-							<div class="figcaption "><div>Project 3</div></div>
-						</div>
-				  </div>
-				</div>
-		  <!-- <figure>
-			<img src="https://d13yacurqjgara.cloudfront.net/users/220419/screenshots/1644214/debut-shot.jpg " alt="Thumb " width="400 " height="300 " />
-			<figcaption><div>Thumbnail Caption</div></figcation>
-		  </figure> -->
-		</div>
-	</section>
-	<section class="container-fluid projects fadeIn" id="projects">
-			<!-- <div class="hero">
-		  		<h1>My Projects <strong>I love them</strong> </h1>
-		  	</div> --><h3>My Projects</h3>
-			<div class="container ">
-					<div class="row ">
-					  <div class="col-sm-4 ">
-					  	<div class="figure ">
-						    <img class="img-responsive " src="https://robohash.org/a " alt="Thumb " width="400 " height="300 " />
-						    <div class="figcaption "><div>Project 1</div></div>
-			  			</div>
-					  </div>
-					  <div class="col-sm-4 ">
-					  	 <div class="figure ">
-						    <img class="img-responsive " src="https://robohash.org/b " alt="Thumb " width="400 " height="300 " />
-						    <div class="figcaption "><div>Project 2</div></div>
-			 			 </div>
-					  </div>
-					  <div class="col-sm-4 ">
-					  		<div class="figure ">
-							    <img class="img-responsive " src="https://robohash.org/c " alt="Thumb " width="400 " height="300 " />
-							    <div class="figcaption "><div>Project 3</div></div>
-			 				</div>
-					  </div>
-					</div>
-					<div class="row ">
-					  <div class="col-sm-4 ">
-					  	<div class="figure ">
-						    <img class="img-responsive " src="https://robohash.org/d " alt="Thumb " width="400 " height="300 " />
-						    <div class="figcaption "><div>Project 1</div></div>
-			  			</div>
-					  </div>
-					  <div class="col-sm-4 ">
-					  	 <div class="figure ">
-						    <img class="img-responsive " src="https://robohash.org/e " alt="Thumb " width="400 " height="300 " />
-						    <div class="figcaption "><div>Project 2</div></div>
-			 			 </div>
-					  </div>
-					  <div class="col-sm-4 ">
-					  		<div class="figure ">
-							    <img class="img-responsive " src="https://robohash.org/f " alt="Thumb " width="400 " height="300 " />
-							    <div class="figcaption "><div>Project 3</div></div>
-			 				</div>
-					  </div>
-					</div>
-			  <!-- <figure>
-			    <img src="https://d13yacurqjgara.cloudfront.net/users/220419/screenshots/1644214/debut-shot.jpg " alt="Thumb " width="400 " height="300 " />
-			    <figcaption><div>Thumbnail Caption</div></figcation>
-			  </figure> -->
-			</div>
-	</section>
-	<!-- CONTACT ME -->
-	<section class="contactMe fadeIn">
-		<div class="contact-section" id="contact">
-				<div class="container">
-					<h3>contact me</h3>
-					 <div class="contact-details">
-			<form>
-				 <div class="col-md-6 contact-left">
-					 <input type="text" class="text" value="Name *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name *';}">
-					 <input type="text" class="text" value="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email *';}">
-					 <input type="text" class="text" value="phone *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone *';}">
-				 </div>
-					 <div class="col-md-6 contact-right">
-					 <textarea  value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message *</textarea>
-					 <input type="submit" value="Send Message"/>
-					 </div>
-					 <div class="clearfix"> </div>
-					 
-			</form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="container-fluid mainFooter fadeIn">
-		<div class="container">
-			<div class="footer-top">
-				<div id="counter"></div>
-				<style>
-				#counter {
-					width: 150px;
-					height: 20px;
-					background-color: #fff;
-					border-radius: 10px;
-					box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					padding: 20px;
-					font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-					transition: 0.5s;
-				}
-				</style>
-			
-				<p>&copy; 2019  made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://tpriyanshu.bitbucket.io">Athiya Fathima</a>
-				</p>
-			</div>
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-	</section>
+    </div>
+  </footer>
 </body>
+
 </html>
 
 <!---counter JS-->
